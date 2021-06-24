@@ -5,7 +5,7 @@
 
 <h2>Index</h2>
 
-@using (Html.BeginForm("Index", "Week", FormMethod.Get))
+@using (Html.BeginForm("Index", "Week", FormMethod.Post))
             {
 <p>請輸入數字: @Html.TextBox("number") <input type="submit" value="查詢" /> </p>
 <p>查詢結果: @ViewBag.result</p>
