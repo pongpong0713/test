@@ -16,22 +16,22 @@ namespace WebTest0624.Controllers
         }
 
         [HttpPost]
-        public ActionResult Index(float week)
+        public ActionResult Index(float number)
         {
             var result = "";
-            if (week == 1)
+            if (number == 1)
                 result = "星期一";
-            if (week == 2)
+            if (number == 2)
                 result = "星期二";
-            if (week == 3)
+            if (number == 3)
                 result = "星期三";
-            if (week == 4)
+            if (number == 4)
                 result = "星期四";
-            if (week == 5)
+            if (number == 5)
                 result = "星期五";
-            if (week == 6)
+            if (number == 6)
                 result = "星期六";
-            if (week == 7)
+            if (number == 7)
                 result = "星期日";
 
             ViewBag.Result = result;
